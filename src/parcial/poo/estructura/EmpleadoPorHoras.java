@@ -23,7 +23,21 @@ public class EmpleadoPorHoras extends Empleado {
         this.tarifasPorHoras = tarifasPorHoras;
         this.nombre=nombre;
     }
+    public int getHorasTrabajadas() {
+        return horasTrabajadas;
+    }
 
+    public void setHorasTrabajadas(int horasTrabajadas) {
+        this.horasTrabajadas = horasTrabajadas;
+    }
+
+    public double getTarifasPorHoras() {
+        return tarifasPorHoras;
+    }
+
+    public void setTarifasPorHoras(double tarifasPorHoras) {
+        this.tarifasPorHoras = tarifasPorHoras;
+    }
     public String getNombre() {
         return nombre;
     }
