@@ -41,7 +41,8 @@ public class Main {
         empleado.add(empleado10);
         
         for(Empleado E :empleado){
-            System.out.println(E);
+            System.out.println(E.toString());
+            System.out.println(E.calaularSalarioEmpleado());
         }
         System.out.println("\n---Empleados solo por hora modificado en la pocicion 4---------------\nCambiamos daniel por carlos");
         //  aqui modificamos la pocicion 0 cambiando el nombre y en las decucciones saveee
@@ -57,7 +58,8 @@ public class Main {
         }
         //se muestra la lista de empleados por horas guardadas
         for(Empleado y : EmpleadosPorHoras){
-            System.out.println(y.toString());   
+            System.out.println(y.toString());
+            System.out.println("salrio: "+y.calaularSalarioEmpleado());
         }
         //empleado que quiero encontrar
         String empleadoBuscar="jeison";
@@ -73,13 +75,8 @@ public class Main {
         }
         // sale por pantalla el empleado a buscar 
         System.out.println("\nEmpleado en especifico encontrado: "+empleadoEncontrado);  
-    }
-
-       
-       
-        
-        
-        
+        System.out.println("salario : "+empleadoEncontrado.calaularSalarioEmpleado());  
+    }   
         
     }
     
