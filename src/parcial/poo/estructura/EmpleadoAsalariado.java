@@ -5,15 +5,12 @@ package parcial.poo.estructura;
 public class EmpleadoAsalariado extends Empleado {
    
     private double deducciones;
-    private String nombre;
-    public EmpleadoAsalariado(){
-        
-        deducciones=0;
-    }
-    public EmpleadoAsalariado( String nombre,double deducciones) {
-        this.nombre=nombre;
-        this.deducciones = deducciones;
-    }
+    
+   public EmpleadoAsalariado(String nombre, double deducciones ){
+       super(nombre);
+       this.deducciones=deducciones;
+   }
+   
     public double getDeducciones() {
         return deducciones;
     }
@@ -21,23 +18,17 @@ public class EmpleadoAsalariado extends Empleado {
     public void setDeducciones(double deducciones) {
         this.deducciones = deducciones;
     }
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
     
     @Override
     public  double calaularSalarioEmpleado(){
-          double salarioAsalariado;
-          salarioAsalariado=salarioBase-deducciones;
-          return salarioAsalariado;
+        double salarioAsalariado;
+        salarioAsalariado=salarioBase-deducciones;
+        return salarioAsalariado;
     }
-     @Override
+
+    @Override
     public String toString() {
-        return "\nnombre: "+nombre+"\nHoras trabajadas: "+horasTrabajadas+"\ntarifas por horas:"+tarifasPorHoras;
+        return "\nnombre:"+nombre+"\ndeducciones:"+deducciones;
     }
     
 }
