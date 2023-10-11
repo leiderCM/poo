@@ -14,7 +14,13 @@ public class EmpleadoAsalariado extends Empleado {
         this.nombre=nombre;
         this.deducciones = deducciones;
     }
+    public double getDeducciones() {
+        return deducciones;
+    }
 
+    public void setDeducciones(double deducciones) {
+        this.deducciones = deducciones;
+    }
     public String getNombre() {
         return nombre;
     }
