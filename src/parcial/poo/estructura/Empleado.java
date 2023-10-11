@@ -3,21 +3,21 @@ package parcial.poo.estructura;
 
 
 public abstract class Empleado {
-    protected double salarioBase;
-     private String nombre;
-    public Empleado(){
-        salarioBase=1000000;
+    protected String nombre;
+    protected double salarioBase=1000000;
+ 
+    public Empleado(String nombre) {
+        this.nombre= nombre;  
     }
-    public Empleado(double salarioBase) {
-        this.salarioBase = salarioBase;
-    }
-    
-    
+    //metodo calcular salario abstracto
     public abstract double calaularSalarioEmpleado();
 
-    public String getNombre(){
+   public String getNombre(){
        return nombre;
    }
 
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }      
     
 }
