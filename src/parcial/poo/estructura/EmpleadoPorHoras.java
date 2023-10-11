@@ -40,7 +40,11 @@ public class EmpleadoPorHoras extends Empleado {
         return salario;
     }
     
-    
+   @Override
+    public String toString() {
+        return "\nnombre: "+nombre+"\nHoras trabajadas: "+horasTrabajadas+"\ntarifas por horas:"+tarifasPorHoras;
+    }
+      
     
     
 }
