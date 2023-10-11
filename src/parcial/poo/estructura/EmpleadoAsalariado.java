@@ -29,5 +29,9 @@ public class EmpleadoAsalariado extends Empleado {
           salarioAsalariado=salarioBase-deducciones;
           return salarioAsalariado;
     }
+     @Override
+    public String toString() {
+        return "\nnombre: "+nombre+"\nHoras trabajadas: "+horasTrabajadas+"\ntarifas por horas:"+tarifasPorHoras;
+    }
     
 }
