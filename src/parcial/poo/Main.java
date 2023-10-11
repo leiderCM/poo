@@ -45,7 +45,7 @@ public class Main {
             System.out.println(E.calaularSalarioEmpleado());
         }
         System.out.println("\n---Empleados solo por hora modificado en la pocicion 4---------------\nCambiamos daniel por carlos");
-        //  aqui modificamos la pocicion 0 cambiando el nombre y en las decucciones saveee
+        //  aqui modificamos la pocicion  del empleado por horas
         EmpleadoPorHoras nuevoEmpleado = new EmpleadoPorHoras("Carlos", 40,999);
         empleado.set(8, nuevoEmpleado);
         //aqui creamos un Array list para almacenar los ultimos 5 ultimos empleados 
