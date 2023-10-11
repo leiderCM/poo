@@ -4,7 +4,7 @@ package parcial.poo.estructura;
 
 public abstract class Empleado {
     protected double salarioBase;
-    
+     private String nombre;
     public Empleado(){
         salarioBase=1000000;
     }
@@ -14,10 +14,10 @@ public abstract class Empleado {
     
     
     public abstract double calaularSalarioEmpleado();
-    
-    
-        
-        
-        
+
+    public String getNombre(){
+       return nombre;
+   }
+
     
 }
