@@ -32,7 +32,7 @@ public class EmpleadoPorHoras extends Empleado {
         this.nombre = nombre;
     }
     
-    
+    @Override
     public  double calaularSalarioEmpleado(){
         double salario;
            salario=horasTrabajadas*tarifasPorHoras;
