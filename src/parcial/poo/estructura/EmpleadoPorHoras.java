@@ -8,7 +8,7 @@ package parcial.poo.estructura;
  *
  * @author Leider Ceron
  */
-public class EmpleadoPorHoras {
+public class EmpleadoPorHoras extends Empleado {
     private int horasTrabajadas;
     private double tarifasPorHoras;
     private String nombre;
